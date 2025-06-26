@@ -23,7 +23,7 @@ jobs:
         ./gradlew aRelease
         ./gradlew aDebug
     - name: Upload build artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v5
       with:
         name: ${{ matrix.os }}-artifact
         path: app/build/outputs
